@@ -4,13 +4,14 @@ val GuavaVersion = "27.0.1-jre"
 val JUnitVersion = "4.12"
 val JUnitInterfaceVersion = "0.11"
 val TruthVersion = "0.42"
+val VavrVersion = "0.10.0"
 
 lazy val equals = (project in file("equals")).settings(
   autoScalaLibrary := false,
-  libraryDependencies += "io.vavr" % "vavr" % "0.10.0",
   testOptions += Tests.Argument(TestFrameworks.JUnit),
 
   libraryDependencies ++= Seq(
+    "io.vavr" % "vavr" % VavrVersion,
     "com.google.guava" % "guava" % GuavaVersion,
     "org.projectlombok" % "lombok" % LombokVersion,
     "junit" % "junit" % JUnitVersion % Test,
