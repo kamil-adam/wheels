@@ -1,8 +1,6 @@
 package pl.writeonly.wheels.equals.impl;
 
-import io.vavr.Function2;
 import org.junit.Test;
-import pl.writeonly.wheels.equals.api.Eqable;
 
 import static com.google.common.truth.Truth.assertThat;
 
@@ -46,10 +44,11 @@ public class EqableTest {
 
     @Test
     public void crossTest() {
-        assertThat(new BaroqueTag(SN, 12)).isNotEqualTo(new LombokTag(SN, 12));
+        assertThat(new BaroqueTag(SN, 12)).isNotEqualTo(new GuavaTag(SN, 12));
+        assertThat(new GuavaTag(SN, 12)).isNotEqualTo(new BaroqueTag(SN, 12));
 
-        assertThat(new BaroqueTag(SN, 12).equals(new LombokTag(SN, 12))).isFalse();
-        assertThat(new LombokTag(SN, 12).equals(new BaroqueTag(SN, 12))).isFalse();
+        assertThat(new BaroqueTag(SN, 12).equals(new GuavaTag(SN, 12))).isFalse();
+        assertThat(new GuavaTag(SN, 12).equals(new BaroqueTag(SN, 12))).isFalse();
 
 //        assertThat(new BaroqueTag(SN, 12).eq(new LombokTag(SN, 12))).isFalse();
 //        assertThat(new LombokTag(SN, 12).eq(new BaroqueTag(SN, 12))).isFalse();

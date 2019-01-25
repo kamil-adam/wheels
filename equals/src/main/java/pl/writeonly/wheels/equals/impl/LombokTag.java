@@ -6,7 +6,6 @@ import lombok.ToString;
 import pl.writeonly.wheels.equals.api.Eqable;
 
 @RequiredArgsConstructor
-//@AllArgsConstructor
 @EqualsAndHashCode
 @ToString
 public class LombokTag implements Eqable<LombokTag> {
@@ -17,5 +16,4 @@ public class LombokTag implements Eqable<LombokTag> {
     public boolean eq(LombokTag that) {
         return equals(that);
     }
-
 }
