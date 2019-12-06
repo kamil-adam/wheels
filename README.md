@@ -1,1 +1,1 @@
-J@v@ -> Java on Wheels
+Eq for Java
