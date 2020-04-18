@@ -1,4 +1,6 @@
 
+javacOptions ++= Seq("-source", "11", "-target", "11")
+
 val LombokVersion = "1.18.4"
 val GuavaVersion = "27.0.1-jre"
 val JUnitVersion = "4.12"
