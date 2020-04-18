@@ -1,14 +1,15 @@
-package pl.writeonly.wheels.equals.impl;
+package pl.writeonly.java.equals.impl;
 
 import com.google.common.base.MoreObjects;
-import com.google.common.base.Objects;
-import pl.writeonly.wheels.equals.api.BoilerplateEqable;
+import pl.writeonly.java.equals.api.BoilerplateEqable;
 
-public class GuavaTag implements BoilerplateEqable<GuavaTag> {
+import java.util.Objects;
+
+public class BaroqueTag implements BoilerplateEqable<BaroqueTag> {
     private final String name;
     private final int count;
 
-    public GuavaTag(String name, int count) {
+    public BaroqueTag(String name, int count) {
         this.name = name;
         this.count = count;
     }
@@ -20,13 +21,13 @@ public class GuavaTag implements BoilerplateEqable<GuavaTag> {
 
 
     @Override
-    public boolean eq(GuavaTag that) {
-        return Objects.equal(name, that.name) && Objects.equal(count, that.count);
+    public boolean eq(BaroqueTag that) {
+        return Objects.equals(name, that.name) && Objects.equals(count, that.count);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(name, count);
+        return Objects.hash(name, count);
     }
 
     @Override

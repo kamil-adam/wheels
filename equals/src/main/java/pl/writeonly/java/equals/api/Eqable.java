@@ -1,4 +1,4 @@
-package pl.writeonly.wheels.equals.api;
+package pl.writeonly.java.equals.api;
 
 public interface Eqable<T extends Eqable> {
 

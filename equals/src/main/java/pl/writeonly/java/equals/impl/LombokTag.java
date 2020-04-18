@@ -1,9 +1,9 @@
-package pl.writeonly.wheels.equals.impl;
+package pl.writeonly.java.equals.impl;
 
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import lombok.ToString;
-import pl.writeonly.wheels.equals.api.Eqable;
+import pl.writeonly.java.equals.api.Eqable;
 
 @RequiredArgsConstructor
 @EqualsAndHashCode

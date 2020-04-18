@@ -1,4 +1,4 @@
-package pl.writeonly.wheels.equals.impl;
+package pl.writeonly.java.equals.impl;
 
 import org.junit.Test;
 

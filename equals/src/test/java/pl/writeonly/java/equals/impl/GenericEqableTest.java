@@ -1,8 +1,8 @@
-package pl.writeonly.wheels.equals.impl;
+package pl.writeonly.java.equals.impl;
 
 import io.vavr.Function2;
 import org.junit.Test;
-import pl.writeonly.wheels.equals.api.Eqable;
+import pl.writeonly.java.equals.api.Eqable;
 
 import static com.google.common.truth.Truth.assertThat;
 
